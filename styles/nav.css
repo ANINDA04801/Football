@@ -1,0 +1,101 @@
+/*-----------------------------------------
+           Common Styles
+----------------------------------- */
+header {
+    background-color: #2D25A0;
+    height: 620px;
+}
+
+.login,
+.live {
+    color: white;
+    background-color: #E02C6D;
+    border-radius: 25px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+/*---------------------------------
+        Navigation bar style
+ --------------------------------- */
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 26px;
+}
+
+.login img {
+    width: 24px;
+    height: 24px;
+}
+
+.login {
+    position: relative;
+    right: -600px;
+    padding: 10px 0px 10px 30px;
+    width: 100px;
+}
+
+/*---------------------------
+      Header Banner Styles
+-------------------------- */
+.banner {
+    display: flex;
+    justify-content: center;
+    column-gap: 102px;
+}
+
+
+
+.banner-title {
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+    Width: 485px;
+    Height: 220px;
+}
+
+.live {
+    width: 130px;
+    height: 12px;
+    text-decoration: none;
+    padding: 10px 24px 10px 24px;
+}
+
+.ball {
+    position: absolute;
+}
+
+
+.banner-image img {
+    width: 556px;
+    height: 438px;
+}
+
+
+/*-----------------------------
+   Banner image animation
+----------------------------- */
+.banner:hover .banner-image {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out 0.1s;
+}
+
+.banner:hover .ball {
+    transform: scale(1.05) rotate(-70deg);
+    transition: transform 0.5s ease-in-out 0.1s;
+    transform-origin: left;
+}
