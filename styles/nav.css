@@ -43,6 +43,10 @@ ul {
 }
 
 .login {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 26px;
     position: relative;
     right: -600px;
     padding: 10px 0px 10px 30px;
@@ -95,7 +99,49 @@ ul {
 }
 
 .banner:hover .ball {
-    transform: scale(1.05) rotate(-70deg);
+    transform: scale(1.05) rotate(-50deg);
     transition: transform 0.5s ease-in-out 0.1s;
     transform-origin: left;
+}
+
+/*--------------------------- 
+        Media Queries
+----------------------- */
+@media only screen and (max-width:768px) {
+    header {
+        width: 100%;
+        height: 35%;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .login {
+        position: relative;
+        right: -150%;
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner-title {
+        margin-left: 15%;
+        font-size: 36px;
+        height: 60%;
+        width: 70%;
+    }
+
+    .live {
+        margin-left: 25%;
+    }
+
+    .banner-player img,
+    .ball img {
+        width: 80%;
+        height: 50%;
+        margin: 5% 10%;
+    }
 }
