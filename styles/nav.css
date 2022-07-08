@@ -125,7 +125,8 @@ ul {
 
     .login {
         position: relative;
-        left: 150%;
+        left: 200%;
+        width: 100%;
     }
 
     .banner {
