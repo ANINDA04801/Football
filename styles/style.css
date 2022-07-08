@@ -16,12 +16,12 @@ body {
     column-gap: 30px;
     row-gap: 30px;
     justify-content: center;
-    padding: 70px 100px 160px 100px;
+    padding: 70px 100px 165px 100px;
 }
 
 .player {
-    width: 332px;
-    height: 476px;
+    width: 330px;
+    height: 447px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 
 }
@@ -50,6 +50,47 @@ body {
     margin-bottom: 0%;
 }
 
+/*-------------------------------
+        Highlites styles
+-------------------------------- */
+.highlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 70px;
+}
+
+.highlight-detail {
+    width: 466px;
+    height: 309px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0%;
+}
+
+.highlight-description {
+    margin-top: 0%;
+}
+
+.live {
+    color: white;
+    background-color: #E02C6D;
+    border-radius: 25px;
+}
+
+
+.live2>a {
+    text-decoration: none;
+    color: white;
+}
+
+.highlight-image img {
+    width: 567px;
+    height: 427px;
+}
+
 /*--------------
     Transitions
 --------------- */
@@ -66,6 +107,34 @@ body {
     .players {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 10%;
     }
 
+    .highlight {
+        width: 100%;
+        height: 35%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .highlight-detail {
+        width: 80%;
+        height: 50%;
+        padding: 10%;
+    }
+
+    .highlight-description {
+        text-align: justify;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .highlight-image img {
+        width: 80%;
+        height: 50%;
+        padding: 10%;
+    }
 }
